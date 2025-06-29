@@ -1,0 +1,46 @@
+{
+  "name": "@lwe8/jsonml",
+  "version": "0.1.0",
+  "description": "HTML vs JsonML convert",
+  "scripts": {
+    "build": "tsc --build --clean && tsc --build",
+    "check": "biome check src --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lwe8/jsonml.git"
+  },
+  "keywords": [],
+  "author": "Pho Thin Mg <phothinmg@disroot.org>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/lwe8/jsonml/issues"
+  },
+  "homepage": "https://github.com/lwe8/jsonml#readme",
+  "devDependencies": {
+    "@biomejs/biome": "^2.0.6",
+    "@types/node": "^24.0.6",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "htmlparser2": "^10.0.0"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "require": "./index.cjs",
+      "import": "./index.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*.cts": [
+        "./dist/index.d.cts"
+      ],
+      "*.cjs": [
+        "./dist/index.d.cts"
+      ]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "declaration": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "target": "es2016",
+    "moduleResolution": "nodenext",
+    "module": "nodenext"
+  },
+  "include": ["src/**/*"]
+}
